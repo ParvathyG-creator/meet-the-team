@@ -123,6 +123,10 @@ nav {
   padding: 0.75rem;
   background: rgba(2, 18, 246, 0.3);
   text-align: center;
+  height:75px;
+
+  
+  
 }
 
 .card-name {
@@ -133,7 +137,7 @@ nav {
 .card-position {
   font-size: 0.85rem;
   color: #0c8ce9;
-  margin-top: 0.25rem;
+  margin-top: 0.2rem;
 }
 
 .team-card:hover {
