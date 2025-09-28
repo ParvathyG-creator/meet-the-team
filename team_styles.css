@@ -227,7 +227,7 @@ background-image: none;
   
 }
 .hexagon:hover{
-  transform: scale(1.5)
+  transform: scale(1.1)
 }
 .image{
   width: 100%;
@@ -275,10 +275,7 @@ background-image: none;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
 
-  .hex-content:hover {   
-    transform: scale(5);
-    
-  }
+ 
 }
 
 /* ================================
@@ -707,3 +704,4 @@ background-image: none;
   /*===========================================*/
 }
 /*=====================================*/
+
