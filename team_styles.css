@@ -9,7 +9,7 @@
 body,
 html {
   font-family: "Lexend", sans-serif;
-  background: #000000 url("images/stars.png") repeat center/cover fixed;
+  background: #000000 url("stars.png") repeat center/cover fixed;
   color: white;
   display: flex;
   flex-direction: column;
@@ -195,40 +195,77 @@ nav {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+.name{
+  display:none;
+}
+
+
 
 .hexagon.large {
-
   width: 110px;
   height: 120px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: #0c8ce9; 
+  transition: all 0.3s ease;
 }
 
 .hexagon.small {          
-background-image: none;
+  background-image: none;
   width: 70px;
   height: 80px;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: #0c8ce9; 
+  transition: all 0.3s ease;
 }
+
+
 .hex-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 3px;    
+  left: 3px;   
+  right: 3px;  
+  bottom: 3px; 
   text-align: center;
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 8px;
-  background-color: white ;
+  background-color: white;
   background-image: none;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+ 
   
 }
+
+
 .hexagon:hover{
-  transform: scale(1.1)
-}
+  transform: scale(1.1);
+  background-color:rgba(96, 2, 246, 0.3);
+     
+  }
+ .hexagon:hover .hex-content{
+ 
+ background-color:rgba(2, 18, 246, 0.3);
+ 
+
+ } 
+  .hexagon:hover .image{
+   display:none;
+  }
+  .hexagon:hover .name{
+  
+  font-size: 10px;
+  font-weight: bold;
+  color:white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+  text-align: center;
+ 
+  }
 .image{
   width: 100%;
   height: 100%;
@@ -266,6 +303,7 @@ background-image: none;
     width: 110px;
     height: 120px;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    
   }
 
   .hexagon.small {          
@@ -274,8 +312,9 @@ background-image: none;
     height: 80px;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
+  
 
- 
+  
 }
 
 /* ================================
@@ -299,9 +338,11 @@ background-image: none;
     align-items: center;
     gap: 10px;
   }
-
+.hexagon:hover .name{
+  font-size: 7px;
+}
   .hexagon.large {
-    background-color: white;
+    
     width: 70px;
     height: 90px;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -313,6 +354,7 @@ background-image: none;
     height: 60px;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
+  
 }
 
 
@@ -704,4 +746,3 @@ background-image: none;
   /*===========================================*/
 }
 /*=====================================*/
-
